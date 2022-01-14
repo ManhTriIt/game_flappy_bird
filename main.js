@@ -61,7 +61,7 @@ class Pipes {
         this.width = 82
         this.height = 650
         this.space = space
-        this.dx = -6
+        this.dx = -5
     }
 
     draw () {
