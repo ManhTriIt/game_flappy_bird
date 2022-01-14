@@ -137,7 +137,7 @@ class Bird {
             }
 
             // Truong hop an diem
-            if (bird.x === arrPipes[0].x + 82 || bird.x === arrPipes[0].x + 81) {
+            if (bird.x === arrPipes[0].x + arrPipes[0].width) {
                 currentScore++
                 bestScore = Math.max(currentScore, bestScore)
             }
