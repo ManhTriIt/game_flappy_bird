@@ -61,7 +61,7 @@ class Pipes {
         this.width = 82
         this.height = 650
         this.space = space
-        this.dx = -5
+        this.dx = -6
     }
 
     draw () {
@@ -74,7 +74,7 @@ let arrPipes = []
 
 function newPipes () {
     for (let i = 1; i < 4; i++) {
-        let pipe = new Pipes(random(530, 660) * i, random(-600, -300), 200)
+        let pipe = new Pipes(random(530, 600) * i, random(-500, -300), 200)
         arrPipes.push(pipe)
     }
 }
@@ -137,7 +137,7 @@ class Bird {
             }
 
             // Truong hop an diem
-            if (bird.x === arrPipes[0].x + 82) {
+            if (bird.x === arrPipes[0].x + 82 || bird.x === arrPipes[0].x + 81) {
                 currentScore++
                 bestScore = Math.max(currentScore, bestScore)
             }
